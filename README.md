@@ -69,7 +69,7 @@ jupyter notebook daily-electricity-load-forecasting-in-sriLanka.ipynb
 
 - [ ] Add weather features (temperature, humidity)
 - [ ] Incorporate holiday effects
-- [ ] Experiment with other models (LSTM, ARIMA)
+- [ ] Experiment with other forecasting models (LSTM, ARIMA, SARIMA, XGBoost)
 - [ ] Hyperparameter tuning
 - [ ] Add external regressors
 
