@@ -1,25 +1,18 @@
 # Daily-Electricity-Load-Forecasting-in-SriLanka
 
-A ML project that forecasts daily electricity demand in Sri Lanka, using Facebook Prophet, with SHAP analysis for model explainability.
+ML project that forecasts daily electricity demand in Sri Lanka, using Facebook Prophet model, with SHAP analysis for model explainability.
 
-## 🎯 Objectives
+##  Objectives
 
 - **Dataset**: Synthetic Sri Lankan load forecasting dataset
 - **Goal**: Forecast daily electricity demand for the next 30 days
 - **Model**: Facebook Prophet with seasonality components
 - **Explainability**: SHAP analysis for feature importance
 
-## 🔧 Technologies Used
+##  Technologies Used
+**Python 3.x, numpy,  pandas,  matplotlib,  scikit-learn, Prophet, SHAP Analysis**
 
-- **Python 3.x**
-- **numpy**: Numerical computations
-- **pandas**: Data manipulation and preprocessing
-- **matplotlib**: Data visualization
-- **scikit-learn**: Model evaluation metrics
-- **Prophet**: Time series forecasting
-- **SHAP**: Model explainability
-
-## 📦 Installation
+##  Installation
 
 1. Clone the repository:
 ```bash
@@ -32,30 +25,15 @@ cd electricity-load-forecasting
 pip install pandas numpy matplotlib prophet scikit-learn shap
 ```
 
-## 📊 Dataset
-
-The dataset contains electricity load measurements at 15-minute intervals with the following characteristics:
-
-- **Time Range**: from 01-01-2020 to 31-05-2025
-- **Frequency**: 15-minute intervals (I later aggregated this to daily)
-- **Target Variable**: Load Demand (kW)
+##  Dataset
 - **File**: `forecasting_dataset.csv`
 
-### Data Preprocessing
-
-- Timestamps converted to datetime objects
-- 15-minute intervals resampled to daily frequency using mean aggregation
-- Chronological 80/20 train-test split
-
-## 🚀 Usage
-
-Run the Jupyter notebook:
-
+##  Usage
 ```bash
 jupyter notebook daily-electricity-load-forecasting-in-sriLanka.ipynb
 ```
 
-### Workflow Steps
+## Workflow Steps
 
 1. **Setup and Imports**: Load required libraries
 2. **Load Data**: Import and parse the dataset
@@ -69,38 +47,25 @@ jupyter notebook daily-electricity-load-forecasting-in-sriLanka.ipynb
 10. **Future Forecasting**: Predict next 30 days
 11. **SHAP Analysis**: Explain model predictions
 
-## 📈 Model Performance
-
-The model is evaluated using:
+##  Model Performance
 
 - **RMSE** = 20.96
 - **MAE** = 16.84
 - **MAPE** = 1.13%
 
-## 🔍 Key Features
-
+##  Key Features
 ### Prophet Components
-
 - **Trend**: Long-term demand pattern
 - **Yearly Seasonality**: Annual variation patterns
 - **Weekly Seasonality**: Day-of-week effects
 
 ### SHAP Analysis
-
 - **Summary Plots**: Visualizes feature contribution to predictions
 - **Feature Importance**: Ranks components by impact
 - **Interpretability**: Explains which components drive predictions
 
 
-## 🧪 Results
-
-The SHAP analysis reveals:
-
-- **Trend component** has the largest impact on predictions (≈1400 SHAP value)
-- **Seasonal components** (weekly/yearly) have minimal impact (between -50 and +50)
-- Model predictions are primarily driven by long-term demand patterns
-
-## 📝 Future Improvements
+##  Future Improvements
 
 - [ ] Add weather features (temperature, humidity)
 - [ ] Incorporate holiday effects
@@ -108,7 +73,7 @@ The SHAP analysis reveals:
 - [ ] Hyperparameter tuning
 - [ ] Add external regressors
 
-## 👤 Author
+##  Author
 
 - GitHub: [@Master0CJ](https://github.com/Master0CJ)
   
