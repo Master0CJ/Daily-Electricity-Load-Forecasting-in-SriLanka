@@ -10,7 +10,7 @@ ML project that forecasts daily electricity demand in Sri Lanka, using Facebook 
 - **Explainability**: SHAP analysis for feature importance
 
 ##  Technologies Used
-**Python 3.x, numpy,  pandas,  matplotlib,  scikit-learn, Prophet, SHAP Analysis**
+**Python3 , numpy,  pandas,  matplotlib,  scikit-learn, Prophet, SHAP Analysis**
 
 ##  Installation
 
